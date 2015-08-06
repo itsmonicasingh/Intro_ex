@@ -31,6 +31,19 @@ public class Main {
         }
     }
 
+    public static class DrawRightTriangle{
+
+        public int n;
+        public void ex4(int n){
+            for(int i = 0; i <= n; i++){
+                for(int j = 0; j <= i; j++){
+                    System.out.print("*");
+                }
+                System.out.print("\n");
+            }
+        }
+    }
+
     public static void main(String[] args) {
 	// write your code here
         //ex 1
@@ -51,5 +64,10 @@ public class Main {
         ob3 = new DrawVerticalLine();
         ob3.ex3(3);
 
+        System.out.println("\n");
+        System.out.println("Exercise4 output");
+        DrawRightTriangle ob4;
+        ob4 = new DrawRightTriangle();
+        ob4.ex4(3);
     }
 }
