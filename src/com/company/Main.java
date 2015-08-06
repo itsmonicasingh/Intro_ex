@@ -44,6 +44,37 @@ public class Main {
         }
     }
 
+    public static class IsoscelesTriangle{
+
+        public int n;
+        public void ex5(int n){
+            for(int i = 0; i < n; i++){
+                System.out.print("*");
+            }
+        }
+    }
+
+    public static class FizzBuzz{
+
+        public int n;
+        public void ex6(int n){
+            for(int i = 0; i < n; i++){
+                if(i % 15 == 0){
+                    System.out.println("FizzBuzz");
+                }
+                else if(i % 5 == 0){
+                    System.out.println("Fizz");
+                }
+                else if(i % 3 == 0){
+                    System.out.println("Buzz");
+                }
+                else{
+                    System.out.println(i);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
 	// write your code here
         //ex 1
@@ -69,5 +100,17 @@ public class Main {
         DrawRightTriangle ob4;
         ob4 = new DrawRightTriangle();
         ob4.ex4(3);
+
+        System.out.println("\n");
+        System.out.println("Exercise5 output");
+        IsoscelesTriangle ob5;
+        ob5 = new IsoscelesTriangle();
+        ob5.ex5(3);
+
+        System.out.println("\n");
+        System.out.println("Exercise6 output");
+        FizzBuzz ob6;
+        ob6 = new FizzBuzz();
+        ob6.ex6(50);
     }
 }
